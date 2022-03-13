@@ -1,0 +1,21 @@
+PODS:
+  - GlobalHelpers (0.1.0)
+
+DEPENDENCIES:
+  - GlobalHelpers (from `https://github.com/lucastamagnone/GlobalHelpers.git`)
+
+EXTERNAL SOURCES:
+  GlobalHelpers:
+    :git: https://github.com/lucastamagnone/GlobalHelpers.git
+
+CHECKOUT OPTIONS:
+  GlobalHelpers:
+    :commit: 000c373b5f44fefe77717f2a41e1f4734d6afc7f
+    :git: https://github.com/lucastamagnone/GlobalHelpers.git
+
+SPEC CHECKSUMS:
+  GlobalHelpers: 2686b4e8ca1477ef7b9d386d86cf99c2e8204943
+
+PODFILE CHECKSUM: b690b02847e2c217b7708d8bda8ffca121854051
+
+COCOAPODS: 1.11.2

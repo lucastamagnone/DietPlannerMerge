@@ -1,26 +1,25 @@
 //
-//  titleMealsModel.swift
-//  Diet Planner
+//  CellTesteModel.swift
+//  DietPlanner2
 //
-//  Created by Lucas on 08/03/22.
+//  Created by Lucas on 13/03/22.
+//  Copyright © 2022 lealapps. All rights reserved.
 //
 
 import UIKit
 import GlobalHelpers
 
-class ​titleMealsModel: TableViewCompatible {
+class ​CellTesteModel: TableViewCompatible {
    
    
    var reuseIdentifier: String {
-      return "titleMealsModelCellIdentifier"
+      return "CellTesteModelCellIdentifier"
    }
    
    
    func cellForTableView(tableView: UITableView, atIndexPath indexPath: IndexPath) -> UITableViewCell {
       
-       if let cell = tableView.dequeueReusableCell(withIdentifier: self.reuseIdentifier, for: indexPath) as? titleMealsModelCell {
-         
-         cell.selectionStyle = .none
+      if let cell = tableView.dequeueReusableCell(withIdentifier: self.reuseIdentifier, for: indexPath) as? CellTesteTableViewCell {
          
          return cell
          
@@ -32,4 +31,3 @@ class ​titleMealsModel: TableViewCompatible {
       }
    }
 }
-

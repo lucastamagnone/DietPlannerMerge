@@ -39,6 +39,10 @@ class mealsViewController: UIViewController {
       
       dataSource.data.append(mealsCell2)
       
+      let cellTeste = ​CellTesteModel()
+      
+      dataSource.data.append(cellTeste)
+      
       dataSource.initializeTableView(tableView: tableView)
       // Do any additional setup after loading the view.
       

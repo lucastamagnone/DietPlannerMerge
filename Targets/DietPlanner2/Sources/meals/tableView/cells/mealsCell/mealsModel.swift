@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import GlobalHelpers
 
 class ​mealsModel: TableViewCompatible {
    

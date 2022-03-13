@@ -20,6 +20,8 @@ class mealsDataSource: NSObject {
       tableView.register(UINib(nibName: "mealsModelCell", bundle: Bundle.main), forCellReuseIdentifier: "mealsModelCellIdentifier")
       
       tableView.register(UINib(nibName: "titleMealsModelCell", bundle: Bundle.main), forCellReuseIdentifier: "titleMealsModelCellIdentifier")
+      
+      tableView.register(UINib(nibName: "CellTesteTableViewCell", bundle: Bundle.main), forCellReuseIdentifier: "CellTesteModelCellIdentifier")
    }
 }
 
@@ -39,6 +41,11 @@ extension mealsDataSource: UITableViewDataSource, UITableViewDelegate {
       
       if let titleMealsCell = data[indexPath.row] as? ​titleMealsModel {
             return titleMealsCell.cellForTableView(tableView: tableView, atIndexPath: indexPath)
+         
+      }
+      
+      if let cellTeste = data[indexPath.row] as? ​CellTesteModel {
+            return cellTeste.cellForTableView(tableView: tableView, atIndexPath: indexPath)
          
       } else {
          return UITableViewCell()

@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import GlobalHelpers
 
 class titleMealsModelCell: UITableViewCell {
    
@@ -24,13 +25,13 @@ class titleMealsModelCell: UITableViewCell {
     }
    
    func titleMealsDate() {
-      
+
       let now = Date()
       let formatter = DateFormatter()
       formatter.locale = Locale(identifier: "pt_BR")
       formatter.setLocalizedDateFormatFromTemplate("EEE, dd MMMM")
       let formattedDate = formatter.string(from: now).replacingOccurrences(of: ".", with: "").capitalizingFirstLetter()
-      
+
       labelTitleMeals.text = formattedDate
    }
     

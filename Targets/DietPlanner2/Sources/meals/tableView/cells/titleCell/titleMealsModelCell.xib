@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="titleMealsModelCellIdentifier" rowHeight="181" id="KGk-i7-Jjw" customClass="titleMealsModelCell" customModule="Diet_Planner" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="181"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="181"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L4c-hH-Np6">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="70"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="calendarTitleMeals" translatesAutoresizingMaskIntoConstraints="NO" id="yVH-AY-NKJ">
+                                <rect key="frame" x="20" y="24" width="22" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="emS-7Q-XnO"/>
+                                    <constraint firstAttribute="width" constant="22" id="gNf-TL-2cV"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p7E-gc-qxa">
+                                <rect key="frame" x="58" y="16.5" width="246" height="37"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nGY-WK-OmV">
+                                <rect key="frame" x="58" y="55" width="246" height="1"/>
+                                <color key="backgroundColor" red="0.92549019607843142" green="0.92549019607843142" blue="0.92549019607843142" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="cVW-Ad-t7g"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="nGY-WK-OmV" firstAttribute="centerX" secondItem="p7E-gc-qxa" secondAttribute="centerX" id="4w2-Ln-Gc2"/>
+                            <constraint firstAttribute="trailing" secondItem="p7E-gc-qxa" secondAttribute="trailing" constant="16" id="DRu-Ay-ibN"/>
+                            <constraint firstItem="p7E-gc-qxa" firstAttribute="leading" secondItem="yVH-AY-NKJ" secondAttribute="trailing" constant="16" id="PN1-67-OfI"/>
+                            <constraint firstAttribute="bottom" secondItem="nGY-WK-OmV" secondAttribute="bottom" constant="14" id="TBe-8y-Qqf"/>
+                            <constraint firstItem="nGY-WK-OmV" firstAttribute="width" secondItem="p7E-gc-qxa" secondAttribute="width" id="Wj7-C8-Tnu"/>
+                            <constraint firstAttribute="trailing" secondItem="nGY-WK-OmV" secondAttribute="trailing" constant="16" id="Zn1-PN-V63"/>
+                            <constraint firstItem="yVH-AY-NKJ" firstAttribute="top" secondItem="L4c-hH-Np6" secondAttribute="top" constant="24" id="hhA-rb-YkD"/>
+                            <constraint firstAttribute="height" constant="70" id="jOt-pn-Vpp"/>
+                            <constraint firstItem="nGY-WK-OmV" firstAttribute="top" secondItem="p7E-gc-qxa" secondAttribute="bottom" constant="1.5" id="nfn-jS-z9w"/>
+                            <constraint firstItem="yVH-AY-NKJ" firstAttribute="leading" secondItem="L4c-hH-Np6" secondAttribute="leading" constant="20" id="phB-IR-P4F"/>
+                            <constraint firstItem="p7E-gc-qxa" firstAttribute="centerY" secondItem="yVH-AY-NKJ" secondAttribute="centerY" id="r7c-Nm-gu8"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="L4c-hH-Np6" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="JNX-5K-WA8"/>
+                    <constraint firstAttribute="bottom" secondItem="L4c-hH-Np6" secondAttribute="bottom" id="dEl-g0-2CL"/>
+                    <constraint firstItem="L4c-hH-Np6" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="pnV-9q-j3L"/>
+                    <constraint firstAttribute="trailing" secondItem="L4c-hH-Np6" secondAttribute="trailing" id="yqF-Ky-dB0"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="labelTitleMeals" destination="p7E-gc-qxa" id="srC-uY-vc1"/>
+            </connections>
+            <point key="canvasLocation" x="-191.30434782608697" y="129.57589285714286"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="calendarTitleMeals" width="21" height="23"/>
+    </resources>
+</document>

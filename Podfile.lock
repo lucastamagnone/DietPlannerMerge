@@ -10,7 +10,7 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   GlobalHelpers:
-    :commit: 000c373b5f44fefe77717f2a41e1f4734d6afc7f
+    :commit: 1a5b14797fd52fd17a7ffb846c6528e3f2a450c5
     :git: https://github.com/lucastamagnone/GlobalHelpers.git
 
 SPEC CHECKSUMS:
